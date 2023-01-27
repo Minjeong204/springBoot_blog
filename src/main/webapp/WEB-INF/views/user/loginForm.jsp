@@ -3,7 +3,7 @@
 <%@include file="../layout/header.jsp"%>
 
 <div class="container">
-	<form action="/action_page.php">
+	<form action="/blog/api/user/login">
 		<div class="mb-3 mt-3">
 			<label for="email" class="form-label">Email:</label> <input
 				type="email" class="form-control" id="email"
@@ -20,8 +20,9 @@
 				Remember me
 			</label>
 		</div>
-		<button type="submit" class="btn btn-primary">Submit</button>
-	</form>
-</div>
 
+	</form>
+	<button type="submit" class="btn btn-primary" id="btn-login">Submit</button>
+</div>
+<script src="/blog/js/user.js"></script>
 <%@include file="../layout/footer.jsp"%>

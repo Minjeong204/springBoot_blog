@@ -74,14 +74,13 @@
 			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
 		<!-- JSTL -->
-<!--		<dependency>
+		<!--		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 		</dependency>-->
-		<!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl-api -->
 		<dependency>
-			<groupId>javax.servlet.jsp.jstl</groupId>
-			<artifactId>jstl-api</artifactId>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
 	</dependencies>

@@ -15,14 +15,15 @@ public class UserService {
 	private UserRepository userRepository;
 
 	@Transactional
-	public int join(User user) {
-		try {
-			userRepository.save(user);
-			return 1;
-		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println("UserService:회원가입():" + e.getMessage());
-		}
-		return -1;
+	public void join(User user) {
+		userRepository.save(user);
+
 	}
+
+	@Transactional
+	public User login(User user) {
+		return userRepository.findByUsernameAndPassword(user.getUsername(), user.getPassword());
+
+	}
+
 }

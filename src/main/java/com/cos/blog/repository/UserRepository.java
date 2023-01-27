@@ -7,6 +7,6 @@ import com.cos.blog.model.User;
 //DAO
 //자동으로 Bean등록이 된다.
 //@Repository //생략가능하다.
-public interface UserRepository extends JpaRepository<User, Integer>{
-
+public interface UserRepository extends JpaRepository<User, Integer> {
+	User findByUsernameAndPassword(String username, String password);
 }
